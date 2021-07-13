@@ -65,6 +65,7 @@ public class Customer {
         this.account = account;
     }
 
+    // не нужно конструктор так гбубоко в код помешать
     public Customer(int id, String firstName, String lastName, String middleName, String address, long creditCard, long account) {
         this.id = id;
         this.firstName = firstName;
@@ -80,7 +81,10 @@ public class Customer {
         return "Customer [id=" + id + ", lastName= " + lastName + ", firstName= " + firstName + ", middleName=" + middleName + ", creditCard=" + creditCard + ", account=" + account + "]";
     }
 
-    public void print() {
+    public void print() {// это метод тут не нужен
         System.out.println(toString());
+        
     }
+    
+    //equals, hashCode?
 }
